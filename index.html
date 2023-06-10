@@ -25,6 +25,7 @@
 </head>
 <body>
 
+  <div id="conteudoForaDialog">
   <a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
 
   <header class="cabecalho container">
@@ -53,17 +54,17 @@
       </svg>
     </a>
 
-    <nav class="cabecalho-nav">
-      <ul>
-        <li class="cabecalho-nav-item"><a href="#">Sobre</a></li>
-        <li class="cabecalho-nav-item"><a href="#">Planos</a></li>
-        <li class="cabecalho-nav-item"><a href="#">Blog</a></li>
-        <li class="cabecalho-nav-item"><a href="#">Destaques</a></li>
-        <li class="cabecalho-nav-item"><a href="#">Institucional</a></li>
-        <li class="cabecalho-nav-item"><a href="#">Contato</a></li>
-      </ul>  
-    </nav>
-  </header>
+      <nav class="cabecalho-nav">
+        <ul>
+          <li class="cabecalho-nav-item"><a href="#">Sobre</a></li>
+          <li class="cabecalho-nav-item"><a href="#">Planos</a></li>
+          <li class="cabecalho-nav-item"><a href="#">Blog</a></li>
+          <li class="cabecalho-nav-item"><a href="#">Destaques</a></li>
+          <li class="cabecalho-nav-item"><a href="#">Institucional</a></li>
+          <li class="cabecalho-nav-item"><a href="#">Contato</a></li>
+        </ul>  
+      </nav>
+    </header>
 
   <main class="conteudo">
 
@@ -315,10 +316,11 @@
               Email:
             </label>
             <input id="emailNewsLetter" type="email" class="dialogNewsletter-campo" placeholder="Digite seu e-mail...">
-            <button class="dialogNewsletter-btn">
+            <button class="dialogNewsletter-btn" type="submit
+            ">
               Assinar newsletter
             </button>
-            <button class="dialogNewsletter-fechar">
+            <button class="dialogNewsletter-fechar" type="button">
               X
             </button>
           </form>
@@ -328,7 +330,7 @@
 
     </section> <!--fim .secaoDestaques-->
 
-    <section class="secaoContato">
+    <section class="secaoContato" inert="true">
       <div class="container">
         <h2 class="tituloPadrao">
           CONTATO
@@ -472,7 +474,9 @@
     </div>
 
   </footer>
+  </div>
   <script src="js/carousel.js"></script>
+  <script src="js/inert.js"></script>
   <script src="js/dialog.js"></script>
 </body>
 </html>
